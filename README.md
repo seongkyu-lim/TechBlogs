@@ -1,5 +1,5 @@
-# developBlogs
-국내외 기술 개발 블로그들
+
+# 국내외 기술 개발 블로그들
 
 
 KAKAO
@@ -60,3 +60,5 @@ MICROSOFT
 
 https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs
 
+
+관심있는 기업 기수 개발 블로그가있다면 추가해주세요! (pr 환영입니당 :) )
