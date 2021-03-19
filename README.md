@@ -38,6 +38,25 @@ NHN
 
 https://meetup.toast.com
 
+오늘의 집
+
+https://www.bucketplace.co.kr/culture
+
+왓챠
+
+https://medium.com/watcha
+
+쏘카
+
+https://tech.socarcorp.kr
+
+브랜디
+
+http://labs.brandi.co.kr
+
+안랩 (AhnLab)
+
+https://asec.ahnlab.com/ko/
 --------
 
 FACEBOOK
@@ -59,6 +78,10 @@ https://developers.googleblog.com
 MICROSOFT
 
 https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs
+
+INSTAGRAM
+
+https://instagram-engineering.com
 
 
 ----------
