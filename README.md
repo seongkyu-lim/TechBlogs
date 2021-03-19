@@ -58,6 +58,10 @@ http://labs.brandi.co.kr
 
 https://asec.ahnlab.com/ko/
 
+리디북스
+
+https://ridicorp.com/story-category/tech-blog/
+
 --------
 
 FACEBOOK
@@ -83,7 +87,6 @@ https://techcommunity.microsoft.com/t5/custom/page/page-id/Blogs
 INSTAGRAM
 
 https://instagram-engineering.com
-
 
 ----------
 관심있는 기업 기술 개발 블로그가있다면 추가해주세요! (pr 환영입니당 :) )
