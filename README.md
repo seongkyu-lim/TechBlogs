@@ -6,7 +6,7 @@ KAKAO
 
 https://tech.kakao.com
 
-우아하 형제들
+우아한 형제들
 
 https://woowabros.github.io
 
