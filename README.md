@@ -88,6 +88,14 @@ INSTAGRAM
 
 https://instagram-engineering.com
 
+SLACK
+
+https://slack.engineering
+
+RIOT GAMES (ROLE)
+
+https://technology.riotgames.com
+
 ----------
 
 지속해서 업데이트 될 예정입니다.
