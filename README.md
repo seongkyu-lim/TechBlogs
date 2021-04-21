@@ -96,6 +96,22 @@ RIOT GAMES (ROLE)
 
 https://technology.riotgames.com
 
+AMAZON (Alexa)
+
+https://developer.amazon.com/en-US/blogs/alexa
+
+ZOOM
+
+https://medium.com/zoom-developer-blog
+
+PAYPAL
+
+https://medium.com/paypal-tech
+
+ESTSOFT
+
+https://blog.est.ai
+
 ----------
 
 지속해서 업데이트 될 예정입니다.
