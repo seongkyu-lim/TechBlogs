@@ -62,6 +62,10 @@ https://asec.ahnlab.com/ko/
 
 https://ridicorp.com/story-category/tech-blog/
 
+휴먼스케이프
+
+https://medium.com/humanscape-tech
+
 --------
 
 FACEBOOK
