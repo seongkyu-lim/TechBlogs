@@ -66,6 +66,10 @@ https://ridicorp.com/story-category/tech-blog/
 
 https://medium.com/humanscape-tech
 
+딜리셔스
+
+https://dealicious-inc.github.io
+
 --------
 
 FACEBOOK
