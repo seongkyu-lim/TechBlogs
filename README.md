@@ -120,6 +120,9 @@ ESTSOFT
 
 https://blog.est.ai
 
+HealingPaper (강남언니)
+
+https://blog.gangnamunni.com/blog
 ----------
 
 지속해서 업데이트 될 예정입니다.
