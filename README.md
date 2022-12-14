@@ -74,6 +74,27 @@ HealingPaper (강남언니)
 
 https://blog.gangnamunni.com/blog
 
+핏펫
+
+https://fitpet.medium.com/
+
+토스
+
+https://toss.tech/
+
+야놀자
+
+https://yanolja.github.io/
+
+직방
+
+https://medium.com/zigbang
+
+카카오스타일(지그재그)
+
+https://devblog.kakaostyle.com/ko/
+
+
 --------
 
 FACEBOOK
@@ -123,6 +144,14 @@ https://medium.com/paypal-tech
 ESTSOFT
 
 https://blog.est.ai
+
+Vercel
+
+https://vercel.com/blog
+
+Spring (Framework)
+
+https://spring.io/blog
 
 ----------
 
