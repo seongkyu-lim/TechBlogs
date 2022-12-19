@@ -95,27 +95,27 @@ https://medium.com/zigbang
 https://devblog.kakaostyle.com/ko/
 
 콴다
+
 https://blog.mathpresso.com/
 
 레진
+
 https://tech.lezhin.com/
 
 인프런
+
 https://tech.inflab.com/
 
-airbnb
-https://medium.com/airbnb-engineering
-
-twitter
-https://blog.twitter.com/engineering/en_us
-
 요기요
+
 https://techblog.yogiyo.co.kr/
 
 뱅크샐러드
+
 https://blog.banksalad.com/
 
 스포카
+
 https://spoqa.github.io/
 
 --------
@@ -175,6 +175,14 @@ https://vercel.com/blog
 Spring (Framework)
 
 https://spring.io/blog
+
+airbnb
+
+https://medium.com/airbnb-engineering
+
+twitter
+
+https://blog.twitter.com/engineering/en_us
 
 ----------
 
