@@ -82,6 +82,10 @@ https://fitpet.medium.com/
 
 https://toss.tech/
 
+토스 페이먼츠
+
+https://velog.io/@tosspayments
+
 야놀자
 
 https://yanolja.github.io/
@@ -117,6 +121,10 @@ https://blog.banksalad.com/
 스포카
 
 https://spoqa.github.io/
+
+FINDA(핀다)
+
+https://medium.com/finda-tech
 
 --------
 
