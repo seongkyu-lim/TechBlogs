@@ -138,7 +138,7 @@ https://developer.apple.com
 
 NETFLIX
 
-https://brunch.co.kr/@sicle-official/35
+https://netflixtechblog.com
 
 GOOGLE
 
