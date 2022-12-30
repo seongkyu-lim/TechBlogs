@@ -126,6 +126,10 @@ FINDA(핀다)
 
 https://medium.com/finda-tech
 
+Crema(크리마)
+
+http://crema.github.io/
+
 --------
 
 FACEBOOK
@@ -191,6 +195,11 @@ https://medium.com/airbnb-engineering
 twitter
 
 https://blog.twitter.com/engineering/en_us
+
+spotify
+
+https://engineering.atspotify.com/
+https://research.atspotify.com/
 
 ----------
 
