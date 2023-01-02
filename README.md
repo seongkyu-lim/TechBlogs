@@ -28,7 +28,7 @@ https://medium.com/daangn
 
 쿠팡
 
-https://medium.com/coupang-tech/technote/home
+https://medium.com/coupang-engineering/kr/home
 
 마켓컬리
 
