@@ -146,6 +146,22 @@ https://medium.com/@coinone
 
 https://techblog.tabling.co.kr/
 
+아이디어스
+
+https://medium.com/idus-tech
+
+SK C&C
+
+https://engineering-skcc.github.io/
+
+무신사
+
+https://medium.com/musinsa-tech
+
+하이퍼커넥트
+
+https://hyperconnect.github.io/
+
 --------
 
 FACEBOOK
@@ -220,6 +236,22 @@ https://research.atspotify.com/
 GITHUB
 
 https://github.blog/
+
+LinkedIn
+
+https://engineering.linkedin.com/blog
+
+ebay(지마켓, 옥션, G9)
+
+https://tech.ebayinc.com/
+
+Uber
+
+https://eng.uber.com/
+
+DropBox
+
+https://dropbox.tech/
 
 ----------
 
