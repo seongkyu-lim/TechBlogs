@@ -94,9 +94,13 @@ https://yanolja.github.io/
 
 https://medium.com/zigbang
 
-카카오스타일(지그재그)
+카카오 스타일(지그재그)
 
 https://devblog.kakaostyle.com/ko/
+
+카카오 엔터프라이즈
+
+https://tech.kakaoenterprise.com/
 
 콴다
 
