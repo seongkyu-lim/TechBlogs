@@ -265,6 +265,14 @@ CLASSMETHOD
 
 https://dev.classmethod.jp/
 
+Kotlin 
+
+https://blog.jetbrains.com/kotlin/
+
+JetBrains
+
+https://blog.jetbrains.com/
+
 ----------
 
 지속해서 업데이트 될 예정입니다.
