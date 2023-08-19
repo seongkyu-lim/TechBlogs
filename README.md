@@ -174,6 +174,10 @@ https://blog.dramancompany.com/
 
 https://techblog.gccompany.co.kr/?gi=2a9b8bd42c14
 
+Dentium
+
+https://dentium.tech/
+
 --------
 
 FACEBOOK
@@ -276,10 +280,6 @@ https://blog.jetbrains.com/kotlin/
 JetBrains
 
 https://blog.jetbrains.com/
-
-Dentium
-
-https://dentium.tech/
 
 ----------
 
