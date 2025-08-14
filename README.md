@@ -1,24 +1,26 @@
 
 # 국내외 기술 개발 블로그들
 
+### 검색 - 국내기업은 한글 외국기업은 영어로, 띄워쓰기 X 검색해주시면 감사하겠습니다!
 
-KAKAO
+
+카카오
 
 https://tech.kakao.com
 
-우아한 형제들
+우아한형제들
 
 https://woowabros.github.io
 
-NAVER
+네이버
 
 https://d2.naver.com/home
 
-LINE
+라인
 
 https://engineering.linecorp.com/ko/
 
-AWS korea
+AWSkorea
 
 https://aws.amazon.com/ko/blogs/korea/
 
@@ -38,7 +40,7 @@ NHN
 
 https://meetup.toast.com
 
-오늘의 집
+오늘의집
 
 https://www.bucketplace.co.kr/culture
 
@@ -54,7 +56,7 @@ https://tech.socarcorp.kr
 
 http://labs.brandi.co.kr
 
-안랩 (AhnLab)
+안랩(AhnLab)
 
 https://asec.ahnlab.com/ko/
 
@@ -70,7 +72,7 @@ https://medium.com/humanscape-tech
 
 https://dealicious-inc.github.io
 
-HealingPaper (강남언니)
+힐링페이퍼 (강남언니)
 
 https://blog.gangnamunni.com/blog
 
@@ -82,7 +84,7 @@ https://fitpet.medium.com/
 
 https://toss.tech/
 
-토스 페이먼츠
+토스페이먼츠
 
 https://velog.io/@tosspayments
 
@@ -94,11 +96,11 @@ https://yanolja.github.io/
 
 https://medium.com/zigbang
 
-카카오 스타일(지그재그)
+카카오스타일(지그재그)
 
 https://devblog.kakaostyle.com/ko/
 
-카카오 엔터프라이즈
+카카오엔터프라이즈
 
 https://tech.kakaoenterprise.com/
 
@@ -178,9 +180,13 @@ Dentium
 
 https://dentium.tech/
 
-카카오 페이
+카카오페이
 
 https://tech.kakaopay.com/tag/developer-relations/
+
+올리브영
+
+https://oliveyoung.tech/
 
 --------
 
