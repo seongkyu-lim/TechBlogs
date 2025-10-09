@@ -188,6 +188,14 @@ https://tech.kakaopay.com/tag/developer-relations/
 
 https://oliveyoung.tech/
 
+넥슨 플랫폼본부
+
+https://www.intelligencelabs.tech/
+
+넥슨 메이플스토리
+
+https://blog.maplestory.nexon.com/
+
 --------
 
 FACEBOOK
