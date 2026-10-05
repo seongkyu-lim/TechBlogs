@@ -1,0 +1,13 @@
+{
+  "name": "techblogs",
+  "private": true,
+  "type": "module",
+  "description": "README.md에 정리된 국내외 기업 기술 블로그 목록을 정적 사이트로 빌드합니다.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
