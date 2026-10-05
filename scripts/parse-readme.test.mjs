@@ -24,22 +24,26 @@ https://research.atspotify.com/
 `);
 
   assert.deepEqual(blogs, [
-    { name: '카카오', region: 'domestic', urls: [{ url: 'https://tech.kakao.com', host: 'tech.kakao.com' }] },
+    { name: '카카오', region: 'domestic', urls: [{ url: 'https://tech.kakao.com', host: 'tech.kakao.com', label: 'tech.kakao.com' }] },
     {
       name: 'Spotify',
       region: 'global',
       urls: [
-        { url: 'https://engineering.atspotify.com/', host: 'engineering.atspotify.com' },
-        { url: 'https://research.atspotify.com/', host: 'research.atspotify.com' },
+        { url: 'https://engineering.atspotify.com/', host: 'engineering.atspotify.com', label: 'engineering.atspotify.com' },
+        { url: 'https://research.atspotify.com/', host: 'research.atspotify.com', label: 'research.atspotify.com' },
       ],
     },
   ]);
 });
 
-test('URL이 없는 항목과 www 접두사를 정리한다', () => {
-  const blogs = parseReadme('설명만 있는 줄\n\n스포카\n\nhttps://www.spoqa.github.io/\n');
+test('URL이 없는 항목은 버리고 www 접두사 없이 경로까지 표시한다', () => {
+  const blogs = parseReadme('설명만 있는 줄\n\n당근마켓\n\nhttps://www.medium.com/daangn/\n');
   assert.deepEqual(blogs, [
-    { name: '스포카', region: 'domestic', urls: [{ url: 'https://www.spoqa.github.io/', host: 'spoqa.github.io' }] },
+    {
+      name: '당근마켓',
+      region: 'domestic',
+      urls: [{ url: 'https://www.medium.com/daangn/', host: 'medium.com', label: 'medium.com/daangn' }],
+    },
   ]);
 });
 

@@ -58,6 +58,13 @@ export function parseReadme(markdown) {
     .map((blog) => ({
       name: DISPLAY_NAMES[blog.name] ?? blog.name,
       region: blog.region,
-      urls: blog.urls.map((url) => ({ url, host: new URL(url).hostname.replace(/^www\./, '') })),
+      urls: blog.urls.map(toLink),
     }));
+}
+
+// medium.com/daangn 처럼 플랫폼을 공유하는 블로그도 구분되도록 경로까지 표시한다.
+function toLink(url) {
+  const { hostname, pathname } = new URL(url);
+  const host = hostname.replace(/^www\./, '');
+  return { url, host, label: `${host}${pathname.replace(/\/+$/, '')}` };
 }
