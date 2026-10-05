@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Blogs — 국내외 기업 기술 블로그 모음</title>
+  <meta name="description" content="카카오, 토스, 우아한형제들부터 Netflix, Airbnb, Uber까지. 국내 {{DOMESTIC}}곳 · 해외 {{GLOBAL}}곳 기업의 기술 블로그를 한 곳에서 검색하세요.">
+  <meta name="theme-color" content="#0d0d10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tech Blogs — 국내외 기업 기술 블로그 모음">
+  <meta property="og:description" content="국내 {{DOMESTIC}}곳 · 해외 {{GLOBAL}}곳 기업의 기술 블로그를 한 곳에서.">
+  <meta property="og:url" content="https://seongkyu-lim.github.io/TechBlogs/">
+  <link rel="canonical" href="https://seongkyu-lim.github.io/TechBlogs/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff5a1f'/%3E%3Cpath d='M9 11l5 5-5 5M16 21h7' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme) document.documentElement.dataset.theme = theme;
+    } catch {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#results">목록으로 건너뛰기</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Tech Blogs 홈">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M9 11l5 5-5 5M16 21h7"/></svg>
+      </span>
+      Tech Blogs
+    </a>
+    <nav class="topbar-actions">
+      <a class="ghost-btn" href="https://github.com/seongkyu-lim/TechBlogs" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        <span class="star-label">Star</span>
+        <span class="star-count" id="star-count" hidden></span>
+      </a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="테마 전환">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>README에서 자동으로 업데이트돼요</p>
+      <h1>좋은 엔지니어링 글은<br><em>여기</em> 다 있어요.</h1>
+      <p class="lede">카카오, 토스, 우아한형제들부터 Netflix, Airbnb, Uber까지 — 개발자들이 함께 모은 기업 기술 블로그를 한 곳에서 찾아보세요.</p>
+      <dl class="stats">
+        <div><dt>전체</dt><dd>{{TOTAL}}</dd></div>
+        <div><dt>국내 기업</dt><dd>{{DOMESTIC}}</dd></div>
+        <div><dt>해외 기업</dt><dd>{{GLOBAL}}</dd></div>
+      </dl>
+    </section>
+
+    <div class="toolbar" id="toolbar">
+      <div class="toolbar-inner">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="visually-hidden">블로그 검색</span>
+          <input id="search" type="search" placeholder="회사명, 도메인, 초성(ㅋㅋㅇ)으로 검색" autocomplete="off" spellcheck="false">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <div class="segmented" role="radiogroup" aria-label="지역 필터">
+          <button type="button" role="radio" data-region="all" aria-checked="true">전체 <span>{{TOTAL}}</span></button>
+          <button type="button" role="radio" data-region="domestic" aria-checked="false">국내 <span>{{DOMESTIC}}</span></button>
+          <button type="button" role="radio" data-region="global" aria-checked="false">해외 <span>{{GLOBAL}}</span></button>
+        </div>
+        <label class="sort">
+          <span class="visually-hidden">정렬</span>
+          <select id="sort">
+            <option value="curated">추천순</option>
+            <option value="name">이름순</option>
+          </select>
+        </label>
+        <button class="primary-btn" id="random" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.2"/><circle cx="15.5" cy="15.5" r="1.2"/><circle cx="12" cy="12" r="1.2"/></svg>
+          아무거나 읽기
+        </button>
+      </div>
+    </div>
+
+    <section class="results" id="results" aria-live="polite">
+      <p class="result-meta" id="result-meta"></p>
+      <ul class="grid" id="grid"></ul>
+      <div class="empty" id="empty" hidden>
+        <p class="empty-title">찾는 블로그가 아직 없어요</p>
+        <p>목록에 없는 기술 블로그를 알고 계신다면 알려주세요.</p>
+        <a class="primary-btn" href="https://github.com/seongkyu-lim/TechBlogs/issues/new?title=%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%B6%94%EA%B0%80%20%EC%9A%94%EC%B2%AD" target="_blank" rel="noopener">블로그 제보하기</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>목록은 <a href="https://github.com/seongkyu-lim/TechBlogs/blob/main/README.md" target="_blank" rel="noopener">README.md</a>에서 자동으로 만들어져요. 추가하고 싶은 기업이 있다면 <a href="https://github.com/seongkyu-lim/TechBlogs/issues" target="_blank" rel="noopener">이슈</a>로 알려주세요.</p>
+    <p class="footer-sub">© seongkyu-lim · 각 블로그의 콘텐츠 저작권은 해당 기업에 있습니다.</p>
+  </footer>
+
+  <template id="card-template">
+    <li class="card">
+      <div class="card-top">
+        <span class="logo"><img alt="" loading="lazy" decoding="async" width="28" height="28"><span class="monogram" aria-hidden="true"></span></span>
+        <span class="tag"></span>
+      </div>
+      <h2 class="card-title"><a class="card-link" target="_blank" rel="noopener"></a></h2>
+      <p class="card-host"></p>
+      <div class="card-extra"></div>
+      <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </li>
+  </template>
+
+  <!-- BLOG_DATA -->
+  <script src="app.js" defer></script>
+</body>
+</html>
