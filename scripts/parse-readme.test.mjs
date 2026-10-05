@@ -36,8 +36,8 @@ https://research.atspotify.com/
   ]);
 });
 
-test('URL이 없는 항목은 버리고 www 접두사 없이 경로까지 표시한다', () => {
-  const blogs = parseReadme('설명만 있는 줄\n\n당근마켓\n\nhttps://www.medium.com/daangn/\n');
+test('인용문은 건너뛰고 www 접두사 없이 경로까지 표시한다', () => {
+  const blogs = parseReadme('> 사이트 안내 https://example.com\n\n당근마켓\n\nhttps://www.medium.com/daangn/\n');
   assert.deepEqual(blogs, [
     {
       name: '당근마켓',
@@ -45,6 +45,11 @@ test('URL이 없는 항목은 버리고 www 접두사 없이 경로까지 표시
       urls: [{ url: 'https://www.medium.com/daangn/', host: 'medium.com', label: 'medium.com/daangn' }],
     },
   ]);
+});
+
+test('URL 형식이 잘못된 항목이 있으면 빌드를 실패시킨다', () => {
+  assert.throws(() => parseReadme('토스\n\nhttps://toss.tech (기술 블로그)\n'), /토스/);
+  assert.throws(() => parseReadme('토스\n\n- https://toss.tech\n'), /URL이 없는 항목/);
 });
 
 test('실제 README를 빠짐없이 파싱한다', async () => {

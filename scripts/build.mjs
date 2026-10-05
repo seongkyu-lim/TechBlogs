@@ -13,7 +13,8 @@ const stats = { TOTAL: blogs.length, DOMESTIC: count('domestic'), GLOBAL: count(
 const json = JSON.stringify(blogs).replace(/</g, '\\u003c');
 
 const html = (await readFile(new URL('index.html', siteDir), 'utf8'))
-  .replace('<!-- BLOG_DATA -->', `<script id="blog-data" type="application/json">${json}</script>`)
+  // 문자열 치환 패턴($&, $' 등)이 README 내용에서 해석되지 않도록 함수로 치환한다.
+  .replace('<!-- BLOG_DATA -->', () => `<script id="blog-data" type="application/json">${json}</script>`)
   .replace(/\{\{(TOTAL|DOMESTIC|GLOBAL)\}\}/g, (_, key) => String(stats[key]));
 
 await rm(distDir, { recursive: true, force: true });
