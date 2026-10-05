@@ -45,21 +45,15 @@ export function parseReadme(markdown) {
     }
 
     if (URL_RE.test(line)) {
-      current?.urls.push(line);
+      current?.urls.push(toLink(line));
       continue;
     }
 
-    current = { name: line, region: REGIONS[section], urls: [] };
+    current = { name: DISPLAY_NAMES[line] ?? line, region: REGIONS[section], urls: [] };
     blogs.push(current);
   }
 
-  return blogs
-    .filter((blog) => blog.urls.length > 0)
-    .map((blog) => ({
-      name: DISPLAY_NAMES[blog.name] ?? blog.name,
-      region: blog.region,
-      urls: blog.urls.map(toLink),
-    }));
+  return blogs.filter((blog) => blog.urls.length > 0);
 }
 
 // medium.com/daangn 처럼 플랫폼을 공유하는 블로그도 구분되도록 경로까지 표시한다.

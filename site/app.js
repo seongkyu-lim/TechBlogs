@@ -46,14 +46,18 @@
     return hash % 360;
   }
 
+  function isChosung(query) {
+    return /^[ㄱ-ㅎ]+$/.test(query);
+  }
+
   function matches(blog, query) {
     if (!query) return true;
-    if (/^[ㄱ-ㅎ]+$/.test(query)) return blog.initials.includes(query);
+    if (isChosung(query)) return blog.initials.includes(query);
     return blog.haystack.includes(query);
   }
 
   function highlight(target, text, query) {
-    const index = query && !/^[ㄱ-ㅎ]+$/.test(query) ? text.toLowerCase().indexOf(query) : -1;
+    const index = query && !isChosung(query) ? text.toLowerCase().indexOf(query) : -1;
     if (index < 0) {
       target.textContent = text;
       return;
@@ -109,18 +113,19 @@
 
     $grid.replaceChildren(...visible.map((blog, i) => createCard(blog, i, query)));
     $empty.hidden = visible.length > 0;
-    $meta.innerHTML = state.query
-      ? `<strong>${visible.length}</strong>개의 블로그가 검색됐어요`
-      : `<strong>${visible.length}</strong>개의 블로그`;
+    $meta.innerHTML = `<strong>${visible.length}</strong>개의 블로그${state.query ? '가 검색됐어요' : ''}`;
 
     $regionButtons.forEach((btn) => btn.setAttribute('aria-checked', String(btn.dataset.region === state.region)));
     syncUrl();
   }
 
-  $search.addEventListener('input', () => {
-    state.query = $search.value.trim();
+  function setQuery(value) {
+    $search.value = value;
+    state.query = value.trim();
     render();
-  });
+  }
+
+  $search.addEventListener('input', () => setQuery($search.value));
 
   $sort.addEventListener('change', () => {
     state.sort = $sort.value;
@@ -159,9 +164,7 @@
       event.preventDefault();
       $search.focus();
     } else if (event.key === 'Escape' && event.target === $search) {
-      $search.value = '';
-      state.query = '';
-      render();
+      setQuery('');
     }
   });
 

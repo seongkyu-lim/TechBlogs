@@ -16,6 +16,8 @@
   --toolbar-bg: rgba(246, 245, 241, 0.82);
   --logo-l: 92%;
   --logo-c: 0.05;
+  --icon-sun: block;
+  --icon-moon: none;
 
   --font: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
   --mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
@@ -44,6 +46,8 @@
     --toolbar-bg: rgba(13, 13, 16, 0.78);
     --logo-l: 30%;
     --logo-c: 0.06;
+    --icon-sun: none;
+    --icon-moon: block;
     color-scheme: dark;
   }
 }
@@ -66,6 +70,8 @@
   --toolbar-bg: rgba(13, 13, 16, 0.78);
   --logo-l: 30%;
   --logo-c: 0.06;
+  --icon-sun: none;
+  --icon-moon: block;
   color-scheme: dark;
 }
 
@@ -137,13 +143,8 @@ svg { display: block; }
 
 .icon-btn { justify-content: center; width: 38px; padding: 0; }
 .icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
-.icon-moon { display: none !important; }
-:root[data-theme='dark'] .icon-sun { display: none !important; }
-:root[data-theme='dark'] .icon-moon { display: block !important; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .icon-sun { display: none !important; }
-  :root:not([data-theme='light']) .icon-moon { display: block !important; }
-}
+.icon-sun { display: var(--icon-sun); }
+.icon-moon { display: var(--icon-moon); }
 
 /* ── Hero ────────────────────────────────────────────── */
 
