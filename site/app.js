@@ -16,12 +16,13 @@
   const $meta = document.getElementById('result-meta');
   const $empty = document.getElementById('empty');
   const $template = document.getElementById('card-template');
+  const $random = document.getElementById('random');
   const $regionButtons = [...document.querySelectorAll('[data-region]')];
 
   const params = new URLSearchParams(location.search);
   const state = {
     query: params.get('q') ?? '',
-    region: REGION_LABEL[params.get('region')] ? params.get('region') : 'all',
+    region: Object.hasOwn(REGION_LABEL, params.get('region')) ? params.get('region') : 'all',
     sort: params.get('sort') === 'name' ? 'name' : 'curated',
   };
   let visible = [];
@@ -115,7 +116,12 @@
     $empty.hidden = visible.length > 0;
     $meta.innerHTML = `<strong>${visible.length}</strong>개의 블로그${state.query ? '가 검색됐어요' : ''}`;
 
-    $regionButtons.forEach((btn) => btn.setAttribute('aria-checked', String(btn.dataset.region === state.region)));
+    $regionButtons.forEach((btn) => {
+      const checked = btn.dataset.region === state.region;
+      btn.setAttribute('aria-checked', String(checked));
+      btn.tabIndex = checked ? 0 : -1;
+    });
+    $random.disabled = visible.length === 0;
     syncUrl();
   }
 
@@ -148,9 +154,9 @@
     next.click();
   });
 
-  document.getElementById('random').addEventListener('click', () => {
-    const pool = visible.length ? visible : blogs;
-    const pick = pool[Math.floor(Math.random() * pool.length)];
+  $random.addEventListener('click', () => {
+    const pick = visible[Math.floor(Math.random() * visible.length)];
+    if (!pick) return;
     const card = $grid.querySelector(`[data-order="${pick.order}"]`);
     $grid.querySelectorAll('.is-picked').forEach((el) => el.classList.remove('is-picked'));
     card?.classList.add('is-picked');
