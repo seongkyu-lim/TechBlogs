@@ -189,6 +189,5 @@
   $toolbar.before(sentinel);
   new IntersectionObserver(([entry]) => $toolbar.classList.toggle('is-stuck', !entry.isIntersecting)).observe(sentinel);
 
-
   render();
 })();
