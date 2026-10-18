@@ -114,7 +114,7 @@
 
     $grid.replaceChildren(...visible.map((blog, i) => createCard(blog, i, query)));
     $empty.hidden = visible.length > 0;
-    $meta.innerHTML = `<strong>${visible.length}</strong>개의 블로그${state.query ? '가 검색됐어요' : ''}`;
+    $meta.textContent = `${visible.length}개`;
 
     $regionButtons.forEach((btn) => {
       const checked = btn.dataset.region === state.region;
@@ -189,15 +189,6 @@
   $toolbar.before(sentinel);
   new IntersectionObserver(([entry]) => $toolbar.classList.toggle('is-stuck', !entry.isIntersecting)).observe(sentinel);
 
-  // GitHub 스타 수 (실패하면 조용히 숨김)
-  fetch('https://api.github.com/repos/seongkyu-lim/TechBlogs')
-    .then((res) => (res.ok ? res.json() : Promise.reject()))
-    .then(({ stargazers_count: stars }) => {
-      const $stars = document.getElementById('star-count');
-      $stars.textContent = stars.toLocaleString('ko-KR');
-      $stars.hidden = false;
-    })
-    .catch(() => {});
 
   render();
 })();
